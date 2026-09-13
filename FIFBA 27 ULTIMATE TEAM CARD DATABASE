@@ -1,0 +1,68 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Card Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⚽ FC CARD DATABASE</h1>
+        <p>Mi colección de cartas de FC</p>
+    </header>
+
+    <main>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search"
+                placeholder="🔎 Buscar jugador..."
+            >
+        </div>
+
+        <section class="filters">
+
+            <select id="nationalityFilter">
+                <option value="">🌎 Todas las nacionalidades</option>
+            </select>
+
+            <select id="teamFilter">
+                <option value="">⚽ Todos los equipos</option>
+            </select>
+
+            <select id="qualityFilter">
+                <option value="">💎 Todas las calidades</option>
+            </select>
+
+            <select id="sortFilter">
+                <option value="default">Orden original</option>
+                <option value="nameAZ">🔤 Nombre A-Z</option>
+                <option value="nameZA">🔤 Nombre Z-A</option>
+                <option value="ratingHigh">⭐ Media mayor → menor</option>
+                <option value="ratingLow">⭐ Media menor → mayor</option>
+            </select>
+
+        </section>
+
+        <div class="counter">
+            <span id="counter">0 cartas</span>
+        </div>
+
+        <section id="cardsContainer" class="cards-container">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FC Card Database</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
